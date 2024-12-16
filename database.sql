@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS vacations (
     country_id INT NOT NULL,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
+    des varchar(256) not null;
     price DECIMAL(10, 2) NOT NULL CHECK (price >= 1000 AND price <= 10000),
     total_likes INT DEFAULT 0,
     img_url VARCHAR(255),
